@@ -10,7 +10,7 @@
 
 ### 결과 및 설명
 <img width="80%" src="https://user-images.githubusercontent.com/42573282/114144725-991a4080-9950-11eb-8881-c838a92d0110.png"/>
-<img width="80%" src="https://user-images.githubusercontent.com/42573282/114146513-a46e6b80-9952-11eb-9614-d1b77a62893a.gif"/>
+<img width="20%" src="https://user-images.githubusercontent.com/42573282/114146513-a46e6b80-9952-11eb-9614-d1b77a62893a.gif"/>
 registerForActivityResult 메소드를 통해 signUpActivityLauncher을 만든다. 
 <img width="80%" src="https://user-images.githubusercontent.com/42573282/114146964-28285800-9953-11eb-8bfc-76e2ad552106.png"/>
 SignUpActivity로 넘어가면서 signUpActivityLauncher를 함께 실행시킨다
@@ -37,7 +37,7 @@ SignUpActivity로 넘어가면서 signUpActivityLauncher를 함께 실행시킨�
 ok
 
 ## 스크롤뷰
-<img width="80%" src="https://user-images.githubusercontent.com/42573282/114148810-25c6fd80-9955-11eb-9f85-3f9066549194.png"/>
+<img width="20%" src="https://user-images.githubusercontent.com/42573282/114148810-25c6fd80-9955-11eb-9f85-3f9066549194.png"/>
 
 
 
