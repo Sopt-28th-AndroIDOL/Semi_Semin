@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".home.HomeActivity">
 <ImageView
     android:id="@+id/pic"
     android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="150dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         />
 
     <TextView
@@ -34,7 +34,7 @@
         android:text="semin Lee"
         app:layout_constraintTop_toBottomOf="@id/githubId"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -46,13 +46,37 @@
         android:layout_height="40dp"
         app:layout_constraintTop_toBottomOf="@id/name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="40dp">
+        app:layout_constraintEnd_toStartOf="@id/more_btn"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/user_story">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="안녕하세요 블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라브라브랆블랄블라발블발비르블릅라븗르ㅏㅂ릐ㅏ끝"/>
     </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="more"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/user_story"
+        android:id="@+id/more_btn"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_story"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/repository_list_frag"/>
+
+
 
 
 

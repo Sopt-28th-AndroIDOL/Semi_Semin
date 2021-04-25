@@ -1,27 +1,29 @@
-package com.cutthebutter.sopt_28th_seminar_1
+package com.cutthebutter.sopt_28th_seminar_1.signin
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import com.cutthebutter.sopt_28th_seminar_1.databinding.ActivitySignInBinding
+import com.cutthebutter.sopt_28th_seminar_1.home.HomeActivity
+import com.cutthebutter.sopt_28th_seminar_1.signup.SignUpActivity
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignInBinding
     private val signUpActivityLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ){
-
+        if(it.resultCode == Activity.RESULT_OK){
+            Toast.makeText(this, "데이터가져옴", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("LC", "onCreate")
+        Log.d("LC", "SignIn_onCreate")
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -36,12 +38,7 @@ class SignInActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             val signInToHomeIntent = Intent(this@SignInActivity, HomeActivity::class.java)
-//            val idpwShared = getSharedPreferences("idPw", Context.MODE_PRIVATE)
-//            val idpwEditor = idpwShared.edit()
             if (binding.idEdtxt.text.toString() != "" && binding.pwEdtxt.text.toString() != "") {
-//                idpwEditor.putString("id", binding.idEdtxt.toString())
-//                idpwEditor.putString("pw", binding.pwEdtxt.toString())
-//                idpwEditor.apply()
                 Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
                 startActivity(signInToHomeIntent)
             } else {

@@ -1,14 +1,13 @@
-package com.cutthebutter.sopt_28th_seminar_1
+package com.cutthebutter.sopt_28th_seminar_1.signup
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.cutthebutter.sopt_28th_seminar_1.databinding.ActivitySignUpBinding
-import java.util.zip.Inflater
+import com.cutthebutter.sopt_28th_seminar_1.signin.SignInActivity
 
 class SignUpActivity : AppCompatActivity() {
     private lateinit var binding : ActivitySignUpBinding
