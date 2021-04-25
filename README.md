@@ -1,4 +1,4 @@
-# 솝트 2nd Lv.1 과제
+# 2주차 Lv.1 과제
 
 <img width="20%" src="https://user-images.githubusercontent.com/42573282/115983000-ac2c4200-a5d9-11eb-9627-b645d96ca68c.png"/> <img width="20%" src="https://user-images.githubusercontent.com/42573282/115983011-bd754e80-a5d9-11eb-807c-77017c8596d6.png"/> <img width="20%" src="https://user-images.githubusercontent.com/42573282/115983047-e4338500-a5d9-11eb-9c2d-46fcccef505f.gif"/>
 
